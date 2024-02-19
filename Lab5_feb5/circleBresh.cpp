@@ -7,7 +7,7 @@ using namespace std;
 
 
 
-void circleMidpt(float centerx,float centery, float radius){
+void circleBresh(float centerx,float centery, float radius){
  
 
     glColor3f(0.0,1.0,0.0);
@@ -74,7 +74,7 @@ void display(void)
     gluOrtho2D( 0.0, 500.0, 500.0,0.0 );
 
     //currently for l to right
-    circleMidpt(100, 100, 20);
+    circleBresh(100, 100, 20);
     // line_DDA(0,500, 300, 300); //up slope
     // line_DDA(0,500, 500, 300); //up slope    
     // line_DDA(300,300, 500, 300); //up slope    
