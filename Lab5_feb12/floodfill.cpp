@@ -76,14 +76,7 @@ void floodFill(GLint x, GLint y, Color oldColor, Color newColor) {
 	return;
 }
 
-void onMouseClick(int button, int state, int x, int y)
-{
-	Color newColor = {0.0f, 0.0f, 1.0f};
-	Color oldColor = {0.0f, 0.0f, 0.0f};
 
-    std::cout<<x<<" "<<y<<std::endl;
-	floodFill(150, 150, oldColor, newColor);
-}
 
 void display(void) {
 	Point p1 = {100, 100}, // bottom-right
@@ -101,6 +94,9 @@ void display(void) {
 	glFlush();
 }
 
+
+
+
 int main(int argc, char** argv)
 {
 	std::cout<<"hello";
@@ -112,7 +108,15 @@ int main(int argc, char** argv)
     Color BorderColor = {1.0,1.0,1.0};
 	init(BorderColor);
 	glutDisplayFunc(display);
-	glutMouseFunc(onMouseClick);
+
+
+	glutMouseFunc([](int button, int state , int x , int y){
+		Color newColor = {0.0f, 0.0f, 1.0f};
+		Color oldColor = {0.0f, 0.0f, 0.0f};
+		std::cout<<x<<" "<<y<<'\n';
+		floodFill(150, 150, oldColor, newColor);
+	});
+	
 	glutMainLoop();
 	return 0;
 }

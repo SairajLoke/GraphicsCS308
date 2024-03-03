@@ -2,8 +2,8 @@
 
 echo "Car"
 
-# g++ floodfill.cpp -o floodfilly -lglut -lGLU -lGL
-# ./floodfilly
+g++ floodfill.cpp -o floodfilly -lglut -lGLU -lGL
+./floodfilly
 # g++ scanline.cpp -o scanline -lglut -lGLU -lGL
 # ./scanline
 
@@ -20,5 +20,5 @@ echo "Car"
 # g++ circleMidpt.cpp -o circleMidpt -lglut -lGLU -lGL
 # ./circleMidpt
 
-g++ ff.cpp -o ff -lglut -lGLU -lGL
-./ff
+# g++ ff.cpp -o ff -lglut -lGLU -lGL
+# ./ff
