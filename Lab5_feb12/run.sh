@@ -1,9 +1,10 @@
 #!/bin/bash
 
-echo "Car"
+echo "Madhavs car"
 
-g++ floodfill.cpp -o floodfilly -lglut -lGLU -lGL
-./floodfilly
+g++ q1_Car_FloodFill_Bresenhem.cpp -o q1_Car_FloodFill_Bresenhem -lglut -lGLU -lGL
+./q1_Car_FloodFill_Bresenhem
+
 # g++ scanline.cpp -o scanline -lglut -lGLU -lGL
 # ./scanline
 
@@ -14,8 +15,8 @@ g++ floodfill.cpp -o floodfilly -lglut -lGLU -lGL
 # g++ car2.cpp -o car2 -lglut -lGLU -lGL
 # ./car2
 
-# g++ car3.cpp -o car3 -lglut -lGLU -lGL
-# ./car3
+# g++ q2_BusDrawing.cpp -o q2_BusDrawing -lglut -lGLU -lGL
+# ./q2_BusDrawing
 
 # g++ circleMidpt.cpp -o circleMidpt -lglut -lGLU -lGL
 # ./circleMidpt

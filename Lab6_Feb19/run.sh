@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "Car"
+echo "Sairaj's Transformations 
 
-g++ tran.cpp -o tran -lglut -lGLU -lGL
-./tran
+"
+
+g++ q1_transformations.cpp -o q1_transformations -lglut -lGLU -lGL
+./q1_transformations
